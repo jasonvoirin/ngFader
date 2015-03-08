@@ -17,7 +17,7 @@ https://angularjs.org/
 4. In the ngFader directive, list your image locations in the “scope.images” array.
 5. Add <ng-fader class="ng-fader"></ng-fader> where you want the fader to show.
 
-
+Use the `printf()` function.
 
 > Testing
 >You’re Done!
