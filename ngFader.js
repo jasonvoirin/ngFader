@@ -71,7 +71,7 @@
 	  return {
 	    restrict: 'E',
 	    scope: false,
-	    template: '<div class="ng-fader col-lg-12">'+
+	    template: '<div class="ng-fader">'+
 	    		//images will render here
 			'<ul>' + 
 				'<li ng-repeat="image in images"><img data-ng-src="{{image.src}}" data-ng-alt="{{image.alt}}" ng-show="selectedImage==$index"/></li>' + 
