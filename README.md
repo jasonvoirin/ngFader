@@ -31,7 +31,7 @@ https://angularjs.org/
 	src: 'img/slideshow/slideshow_Image_4_low.jpg',<br>
 	alt: 'Add your image description here'<br>
 }]</code></pre>
-5. Add <code>\<ng-fader class="ng-fader"></ng-fader></code> where you want the fader to show.<br>
+5. Add <code>\<ng-fader class="ng-fader">\</ng-fader></code> where you want the fader to show.<br>
 
 You’re Done!
 
