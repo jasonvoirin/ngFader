@@ -1,0 +1,93 @@
+/* =============================================
+    Simple Fader Styles
+================================================*/
+.ng-fader {
+    background-color: #000;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 22;
+}
+.ng-fader ul {
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.ng-fader li {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+.ng-fader li img {
+    border: medium none;
+    margin: 0;
+    width: 100%;
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    -webkit-transition: opacity 1s ease 0s;
+    -moz-transition: opacity 1s ease 0s;
+    -o-transition: opacity 1s ease 0s;
+    transition: opacity 1s ease 0s;
+}
+.ng-fader li img.ng-hide {
+    opacity: 0;
+    height: 0;
+    position: absolute;
+}
+/* =============================================
+    Simple Fader Pagination Dots
+================================================*/
+.ng-fader-pagination {
+    bottom: 10px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: auto;
+}
+.ng-fader-pagination li {
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    height: 12px;
+    margin: 4px;
+    padding: 5px;
+    position: relative;
+    width: 12px;
+    cursor: pointer;
+}
+.ng-fader-pagination li:first-child {
+    background-color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    height: 12px;
+    margin: 4px 4px 4px 20px;
+    padding: 5px;
+    position: relative;
+    width: 12px;
+}
+.ng-fader-pagination li.current {
+    background-color: #666;
+}
+/* =============================================
+    Simple Fader Controls
+================================================*/
+.ng-fader-controls {
+    bottom: 10px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+}
+.ng-fader-controls li {
+    color: #FFF;
+    display: inline;
+    font-size: 1.2em;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.ng-fader-controls li.active {
+    color: #666;
+}
