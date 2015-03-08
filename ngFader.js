@@ -4,28 +4,28 @@
     angular.module('ngFader', [])
 	.directive('ngFader', function($interval) {
 
-		function link(scope){
+	function link(scope){
 
 		/* ==================================================================
 			List your images here. 
 			The images array is the only code you should need to change.
 		===================================================================== */
-			scope.images = [{
-	          src: 'img/slideshow/slideshow_Image_1_low.jpg',
-	          alt: 'Add your image description here'
-	        }, {
-	          src: 'img/slideshow/slideshow_Image_2_low.jpg',
-	          alt: 'Add your image description here'
-	        }, {
-	          src: 'img/slideshow/slideshow_Image_3_low.jpg',
-	          alt: 'Add your image description here'
-	        }, {
-	          src: 'img/slideshow/slideshow_Image_4_low.jpg',
-	          alt: 'Add your image description here'
-	        }];
+		scope.images = [{
+			src: 'img/slideshow/slideshow_Image_1_low.jpg',
+			alt: 'Add your image description here'
+		}, {
+			src: 'img/slideshow/slideshow_Image_2_low.jpg',
+			alt: 'Add your image description here'
+		}, {
+			src: 'img/slideshow/slideshow_Image_3_low.jpg',
+			alt: 'Add your image description here'
+		}, {
+			src: 'img/slideshow/slideshow_Image_4_low.jpg',
+			alt: 'Add your image description here'
+		}];
 
 
-			//Pagination dots - gets number of images
+		//Pagination dots - gets number of images
 	        scope.numberOfImages = scope.images.length;
 	        scope.dots = function(num) {
 	          return new Array(num);   
@@ -66,40 +66,40 @@
 	        };
 	        scope.startSlider();
 
-		}
+	}
 
 	  return {
 	    restrict: 'E',
 	    scope: false,
 	    template: '<div class="ng-fader col-lg-12">'+
-	    			//images will render here
-					'<ul>' + 
-						'<li ng-repeat="image in images"><img data-ng-src="{{image.src}}" data-ng-alt="{{image.alt}}" ng-show="selectedImage==$index"/></li>' + 
-					'</ul>' + 
-					//pagination dots will render here
-					'<div class="ng-fader-pagination">' + 
-						'<ul>' + 
-							'<li ng-repeat="i in dots(numberOfImages) track by $index" ng-class="{current: selectedImage==$index}" ng-click="setSelected($index)"></li>' + 
-						'</ul>' + 
-					'</div>' + 
-					//controls are here
-					'<div class="ng-fader-controls">' + 
-						'<ul>' + 
-							'<li ng-click="sliderBack()">' + 
-								'<i class="fa fa-backward"></i>' + 
-							'</li>' + 
-							'<li ng-class="{\'active\': activePause}" ng-click="stopSlider()">' + 
-								'<i class="fa fa-pause"></i>' + 
-							'</li>' + 
-							'<li ng-class="{\'active\': activeStart}" ng-click="startSlider()">' + 
-								'<i class="fa fa-play"></i>' + 
-							'</li>' + 
-							'<li ng-click="sliderForward()">' + 
-								'<i class="fa fa-forward"></i>' + 
-							'</li>' + 
-						'</ul>' + 
-					'</div>' +
-				'</div>',
+	    		//images will render here
+			'<ul>' + 
+				'<li ng-repeat="image in images"><img data-ng-src="{{image.src}}" data-ng-alt="{{image.alt}}" ng-show="selectedImage==$index"/></li>' + 
+			'</ul>' + 
+			//pagination dots will render here
+			'<div class="ng-fader-pagination">' + 
+				'<ul>' + 
+					'<li ng-repeat="i in dots(numberOfImages) track by $index" ng-class="{current: selectedImage==$index}" ng-click="setSelected($index)"></li>' + 
+				'</ul>' + 
+			'</div>' + 
+			//controls are here
+			'<div class="ng-fader-controls">' + 
+				'<ul>' + 
+					'<li ng-click="sliderBack()">' + 
+						'<i class="fa fa-backward"></i>' + 
+					'</li>' + 
+					'<li ng-class="{\'active\': activePause}" ng-click="stopSlider()">' + 
+						'<i class="fa fa-pause"></i>' + 
+					'</li>' + 
+					'<li ng-class="{\'active\': activeStart}" ng-click="startSlider()">' + 
+						'<i class="fa fa-play"></i>' + 
+					'</li>' + 
+					'<li ng-click="sliderForward()">' + 
+						'<i class="fa fa-forward"></i>' + 
+					'</li>' + 
+				'</ul>' + 
+			'</div>' +
+		'</div>',
 		link: link
 	  };
 	});
