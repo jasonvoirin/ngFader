@@ -12,8 +12,7 @@ https://angularjs.org/
 ## Setup Instructions
 
 1. Link the ngFader CSS in your header - make sure Font Awesome CSS is linked as well.
-'<link href="css/ngFader.css" type="text/css" rel="stylesheet">'<br>
-'<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">'
+<code><link href="css/ngFader.css" type="text/css" rel="stylesheet"></code>
 2. Add the ngFader directive js script tag in your header.
 3. Add 'ngFader' as a module dependancy - make sure ngAnimate is listed as a dependancy as well.
 4. In the ngFader directive, list your image locations in the “scope.images” array.
