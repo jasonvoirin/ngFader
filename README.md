@@ -1,6 +1,9 @@
 # ngFader
 Responsive AngularJS Slideshow Fader
 
+## Demo
+You can see a working demo [here.](http://www.thetexans.org)
+
 ## Dependencies
 ngFader requires Font Awesome (for control icons) and ngAnimate (fading transitions).
 
@@ -10,7 +13,6 @@ ngAnimate:
 https://angularjs.org/
 
 ## Setup Instructions
-
 1. Link the ngFader CSS in your header - make sure Font Awesome CSS is linked as well:<br>
 <pre><code>\<link type="text/css" rel="stylesheet" href="css/ngFader.css"></code></pre>
 2. Add the ngFader directive js script tag in your header: <br>
@@ -33,14 +35,8 @@ https://angularjs.org/
 }]</code></pre>
 5. Add <code>\<ng-fader>\</ng-fader></code> where you want the fader to show.<br>
 
-You’re Done!
-
-## Demo
-
-You can see a working demo [here.](http://www.thetexans.org)
 
 ## Donate 
-
 Github charges me a monthly fee to contribute this code to our development community. Help me cover the cost by donating via [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SYBU2SUZCJUE).
 
 
