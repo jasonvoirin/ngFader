@@ -19,21 +19,25 @@ https://angularjs.org/
 <pre><code>angular.module('yourAppModule', ['ngAnimate', 'ngFader']);</code></pre>
 4. In the ngFader directive, list your image locations in the “scope.images” array: <br>
 <pre><code>scope.images = [{<br>
-	src: 'img/slideshow/slideshow_Image_1_low.jpg',<br>
-	alt: 'Add your image description here'<br>
-	}, {<br>
-	src: 'img/slideshow/slideshow_Image_2_low.jpg',<br>
-	alt: 'Add your image description here'<br>
-	}, {<br>
-	src: 'img/slideshow/slideshow_Image_3_low.jpg',<br>
-	alt: 'Add your image description here'<br>
-	}, {<br>
-	src: 'img/slideshow/slideshow_Image_4_low.jpg',<br>
-	alt: 'Add your image description here'<br>
+		src: 'img/slideshow/slideshow_Image_1_low.jpg',<br>
+		alt: 'Add your image description here'<br>
+		}, {<br>
+		src: 'img/slideshow/slideshow_Image_2_low.jpg',<br>
+		alt: 'Add your image description here'<br>
+		}, {<br>
+		src: 'img/slideshow/slideshow_Image_3_low.jpg',<br>
+		alt: 'Add your image description here'<br>
+		}, {<br>
+		src: 'img/slideshow/slideshow_Image_4_low.jpg',<br>
+		alt: 'Add your image description here'<br>
 }]</code></pre>
 5. Add <code>\<ng-fader class="ng-fader">\</ng-fader></code> where you want the fader to show.<br>
 
 You’re Done!
+
+## Donate 
+
+Github charges me a monthly fee to contribute this code to our development community. Help me cover the cost by donating via [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SYBU2SUZCJUE).
 
 
 
