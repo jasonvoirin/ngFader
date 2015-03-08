@@ -12,7 +12,7 @@ https://angularjs.org/
 ## Setup Instructions
 
 1. Link the ngFader CSS in your header - make sure Font Awesome CSS is linked as well.<br>
-<pre><code>link type="text/css" rel="stylesheet" href="css/ngFader.css"</code></pre>
+<pre><code>\<link type="text/css" rel="stylesheet" href="css/ngFader.css"></code></pre>
 2. Add the ngFader directive js script tag in your header. <br>
 \<script src="js/directives/ngFader.js"></script>
 3. Add 'ngFader' as a module dependancy - make sure ngAnimate is listed as a dependancy as well.
