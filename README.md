@@ -5,7 +5,7 @@ Responsive AngularJS Slideshow Fader
 ngFader requires Font Awesome (for control icons) and ngAnimate (fading transitions).
 
 Font Awesome:
-http://fortawesome.github.io/Font-Awesome/ 
+http://fortawesome.github.io/Font-Awesome/ <br>
 ngAnimate:
 https://angularjs.org/
 
@@ -17,7 +17,7 @@ https://angularjs.org/
 4. In the ngFader directive, list your image locations in the “scope.images” array.
 5. Add <ng-fader class="ng-fader"></ng-fader> where you want the fader to show.
 
-This is [an example](http://example.com/ "Title") inline link.
+
 
 > Testing
 >You’re Done!
