@@ -1,5 +1,5 @@
 # ngFader
-Responsive AngularJS Slideshow Fader
+ngFader is a simple and responsive AngularJS fading slideshow directive and <u>requires NO jQuery</u>!
 
 ## Demo
 You can see a working demo [here.](http://www.thetexans.org)
