@@ -1,6 +1,9 @@
 # ngFader
 A simple and responsive AngularJS fading slideshow directive that requires no jQuery!
 
+V2 coming soon! 
+Version 2 will include touch events like swipe right/left, tap to pause/play and custom control icons which will exclude Font Awesome as a dependancy.
+
 ## Demo
 You can see a working demo [here.](http://www.thetexans.org)
 
