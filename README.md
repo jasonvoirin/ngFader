@@ -5,7 +5,7 @@ A simple, responsive and pure AngularJS fading slideshow directive that requires
 You can see a working demo [here.](http://www.thetexans.org)
 
 ## Dependencies
-ngFader requires ngAnimate for the fading transitions and ngTouch for mobile swipeing gestures. 
+ngFader requires ngAnimate for the fading transitions and ngTouch for mobile swiping gestures. 
 
 ngAnimate:
 https://angularjs.org/ <br>
@@ -15,7 +15,7 @@ https://angularjs.org/
 ## Setup Instructions
 1. Link the ngFader CSS in your header:<br>
 <pre><code>\<link type="text/css" rel="stylesheet" href="css/ngFader.css"></code></pre>
-2. Add the ngFader directive js script tag in your header: <br>
+2. Add the ngFader directive script tag in your header: <br>
 <pre><code>\<script src="js/directives/ngFader.js"></script></code></pre>
 3. Add 'ngFader' as a module dependancy - make sure ngAnimate and ngTouch is listed as a dependancy as well:
 <pre><code>angular.module('yourAppModule', ['ngAnimate', 'ngTouch', 'ngFader']);</code></pre>
