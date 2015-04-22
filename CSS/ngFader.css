@@ -1,5 +1,5 @@
 /* =============================================
-    Simple Fader Styles
+    ngFader General Styles
 ================================================*/
 .ng-fader {
     background-color: #000;
@@ -38,7 +38,7 @@
     position: absolute;
 }
 /* =============================================
-    Simple Fader Pagination Dots
+    ngFader Pagination Dots
 ================================================*/
 .ng-fader-pagination {
     bottom: 10px;
@@ -72,7 +72,7 @@
     background-color: #666;
 }
 /* =============================================
-    Simple Fader Controls
+    ngFader Controls
 ================================================*/
 .ng-fader-controls {
     bottom: 10px;
@@ -84,10 +84,118 @@
     color: #FFF;
     display: inline;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 0 15px;
     position: relative;
     cursor: pointer;
 }
+.ng-fader-controls li:nth-child(3) {
+    padding-right: 0;
+}
 .ng-fader-controls li.active {
     color: #666;
+}
+/* Hide for mobile so user can swipe. */
+@media screen and (max-width: 740px) {
+    .ng-fader-controls {
+        display: none;
+    }
+}
+/* =============================================
+    ngFader Control Icons
+================================================*/
+.ngfader-play {
+    width: 0; 
+    height: 0;
+    margin: 0;
+    display: inline-block;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid #FFF;
+    cursor: pointer;
+}
+.ngfader-play.active {
+    border-left: 15px solid #666;
+}
+.ngfader-stop {
+    background-color: #FFF;
+    height: 15px;
+    margin: 0;
+    display: inline-block;
+    width: 15px;
+    cursor: pointer;
+}
+.ngfader-stop.active {
+    background-color: #666;
+}
+.ngfader-pause {
+    background-color: #FFF;
+    height: 15px;
+    margin: 0;
+    width: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.ngfader-pause:after {
+    background-color: #FFF;
+    height: 15px;
+    margin-left: 3px;
+    width: 5px;
+    content: "";
+    display: block;
+    position: relative;
+    left: 5px;
+}
+.ngfader-pause.active, .ngfader-pause.active:after {
+    background-color: #666;
+}
+.ngfader-forward {
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #FFF;
+    border-top: 8px solid transparent;
+    height: 0;
+    margin: 0;
+    width: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+.ngfader-forward:after {
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #FFF;
+    border-top: 8px solid transparent;
+    bottom: 8px;
+    content: "";
+    display: block;
+    height: 0;
+    margin: 0;
+    position: relative;
+    right: 0;
+    width: 0;
+}
+.ngfader-forward.active, .ngfader-forward.active:after {
+    border-left: 8px solid #666;
+}
+.ngfader-back {
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #FFF;
+    border-top: 8px solid transparent;
+    height: 0;
+    margin: 0;
+    width: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+.ngfader-back:after {
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #FFF;
+    border-top: 8px solid transparent;
+    bottom: 8px;
+    content: "";
+    display: block;
+    height: 0;
+    position: relative;
+    left: 8px;
+    width: 0;
+}
+.ngfader-back.active, .ngfader-back.active:after {
+    border-right: 8px solid #666;
 }
