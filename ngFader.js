@@ -1,4 +1,3 @@
-
 (function () {
     'use strict';
     angular.module('ngFader', [])
@@ -58,6 +57,14 @@
 	          scope.activePause = true;
 	          scope.activeStart = false;
 	        };
+
+	        scope.toggleStartStop = function() {
+	          if(scope.activeStart) {
+	          	scope.stopSlider();
+	          } else {
+	          	scope.startSlider();
+	          }
+	        };
 	        
 	        scope.startSlider = function(){
 	          scope.intervalPromise = $interval(scope.autoSlider, 3000);
@@ -74,7 +81,7 @@
 	    template: '<div class="ng-fader">'+
 	    		//images will render here
 			'<ul>' + 
-				'<li ng-repeat="image in images"><img data-ng-src="{{image.src}}" data-ng-alt="{{image.alt}}" ng-show="selectedImage==$index"/></li>' + 
+				'<li ng-repeat="image in images" ng-click="toggleStartStop()" ng-swipe-right="sliderBack()" ng-swipe-left="sliderForward()"><img data-ng-src="{{image.src}}" data-ng-alt="{{image.alt}}" ng-show="selectedImage==$index"/></li>' + 
 			'</ul>' + 
 			//pagination dots will render here
 			'<div class="ng-fader-pagination">' + 
@@ -86,16 +93,16 @@
 			'<div class="ng-fader-controls">' + 
 				'<ul>' + 
 					'<li ng-click="sliderBack()">' + 
-						'<i class="fa fa-backward"></i>' + 
+						'<i class="ngfader-back"></i>' + 
 					'</li>' + 
-					'<li ng-class="{\'active\': activePause}" ng-click="stopSlider()">' + 
-						'<i class="fa fa-pause"></i>' + 
+					'<li ng-click="stopSlider()">' + 
+						'<i class="ngfader-pause" ng-class="{\'active\': activePause}"></i>' + 
 					'</li>' + 
-					'<li ng-class="{\'active\': activeStart}" ng-click="startSlider()">' + 
-						'<i class="fa fa-play"></i>' + 
+					'<li ng-click="startSlider()">' + 
+						'<i class="ngfader-play"  ng-class="{\'active\': activeStart}"></i>' + 
 					'</li>' + 
 					'<li ng-click="sliderForward()">' + 
-						'<i class="fa fa-forward"></i>' + 
+						'<i class="ngfader-forward"></i>' + 
 					'</li>' + 
 				'</ul>' + 
 			'</div>' +
