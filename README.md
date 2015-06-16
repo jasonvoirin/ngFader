@@ -1,5 +1,6 @@
 # ngFader
 A simple, responsive and pure AngularJS fading slideshow directive that requires no jQuery!
+This fork has a more robust interface.
 
 ## Demo
 You can see a working demo [here.](http://www.thetexans.org)
