@@ -35,9 +35,41 @@ https://angularjs.org/
 }]</code></pre>
 5. Add <code>\<ng-fader>\</ng-fader></code> where you want the fader to show.<br>
 
+<ng-fader data-images="images" autostart=true timer="5000"  ng-if="dataHasLoaded" showdots=false></ng-fader>
+
 
 ## Donate 
 Github charges me a monthly fee to contribute this code to our development community. Help me cover the cost by donating via [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SYBU2SUZCJUE).
 
+Controller Code
+    $scope.images = [{
+                src: 'images/banner1.jpg',
+                alt: 'Add your image description here'
+            }, {
+                src: 'images/banner3.jpg',
+                alt: 'Add your image description here'
+            }, {
+                src: 'images/banner5.jpg',
+                alt: 'Add your image description here'
+            }, {
+                src: 'images/banner4.jpg',
+                alt: 'Add your image description here'
 
+            }, {
+                src: 'images/banner2.jpg',
+                alt: 'Add your image description here'
+            }];
+            $scope.dataHasLoaded = true;
+ or
+ $scope.getGallery = function () {
+          
+            GalleryModel.getFader($scope.dataset).then(function (models) {
+
+                $scope.images = models;
+                $scope.dataHasLoaded = true;
+              
+            });
+
+
+        }
 
