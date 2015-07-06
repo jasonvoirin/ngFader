@@ -39,5 +39,6 @@ https://angularjs.org/
 ## Donate 
 Github charges me a monthly fee to contribute this code to our development community. Help me cover the cost by donating via [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SYBU2SUZCJUE).
 
-
+##Issues or Suggestions?
+If you would like to see some new features, have any suggestions or notice any issues, please feel free to list them in the [issues section](https://github.com/jasonvoirin/ngFader/issues). Let's try not to have a bunch of forks with various code types if possible. I understand if there are customizations involved, but if it is generic, then let's add it to the code base. I would greatly appreciate it!
 
