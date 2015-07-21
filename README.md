@@ -3,7 +3,15 @@ A simple, responsive and pure AngularJS fading slideshow directive that requires
 This fork has a more robust interface.
 
 ## Demo
-You can see a working demo [here.](http://www.thetexans.org)
+You can see original working demo [here.](http://www.thetexans.org)
+
+## My Demp
+Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery by stepping through directory
+(http://www.primetime3.com/gallery)
+
+## My Changes
+Dynamic data source
+
 
 ## Dependencies
 ngFader requires ngAnimate for the fading transitions and ngTouch for mobile swiping gestures. 
