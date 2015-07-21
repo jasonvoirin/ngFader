@@ -5,7 +5,7 @@ This fork has a more robust interface.
 ## Demo
 You can see original working demo [here.](http://www.thetexans.org)
 
-## My Demp
+## My Demo
 Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery by stepping through directory
 (http://www.primetime3.com/gallery)
 
