@@ -1,4 +1,3 @@
-
 var ngFader = angular.module('directive.ngFader', [])
 	.directive('ngFader',['$interval', function($interval) {
 
@@ -102,3 +101,7 @@ var ngFader = angular.module('directive.ngFader', [])
 				'</ul>' + 
 			'</div>' +
 		'</div>'
+
+
+	  };
+	}]);
