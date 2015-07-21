@@ -10,7 +10,52 @@ Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery
 (http://www.primetime3.com/gallery)
 
 ## My Changes
-Dynamic data source
+  added properties to use
+  autostart
+  timer
+  data-images
+  showdots
+  
+  setup in controller
+  $scope.dataHasLoaded = false; flag for data loading
+  // dynamic data
+  $scope.getGallery = function () {
+            GalleryModel.getFader($scope.dataset).then(function (models) {
+		$scope.images = models;
+                $scope.dataHasLoaded = true;
+            });
+      }
+      or hardcoded
+         $scope.images = [{
+                src: 'images/banner1.jpg',
+                alt: 'Add your image description here'
+            }, {
+                src: 'images/banner3.jpg',
+                alt: 'Add your image description here'
+            }, {
+                src: 'images/banner5.jpg',
+                alt: 'Add your image description here'
+            }, {
+                src: 'images/banner4.jpg',
+                alt: 'Add your image description here'
+
+            },  {
+                src: 'images/banner2.jpg',
+                alt: 'Add your image description here'
+            }];
+            $scope.dataHasLoaded = true;
+      
+      
+      
+  set watch to change datasource
+  $scope.$watch("dataset", function () {
+            $scope.getGallery($scope.dataset);
+            $scope.dataHasLoaded = false;
+   });
+    setup in html
+    <ng-fader data-images="images" autostart=true timer="6000" ng-if="dataHasLoaded" showdots=false></ng-fader>
+
+
 
 
 ## Dependencies
@@ -49,36 +94,4 @@ https://angularjs.org/
 
 ## Donate 
 Github charges me a monthly fee to contribute this code to our development community. Help me cover the cost by donating via [Paypal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SYBU2SUZCJUE).
-
-Controller Code
-    $scope.images = [{
-                src: 'images/banner1.jpg',
-                alt: 'Add your image description here'
-            }, {
-                src: 'images/banner3.jpg',
-                alt: 'Add your image description here'
-            }, {
-                src: 'images/banner5.jpg',
-                alt: 'Add your image description here'
-            }, {
-                src: 'images/banner4.jpg',
-                alt: 'Add your image description here'
-
-            }, {
-                src: 'images/banner2.jpg',
-                alt: 'Add your image description here'
-            }];
-            $scope.dataHasLoaded = true;
- or
- $scope.getGallery = function () {
-          
-            GalleryModel.getFader($scope.dataset).then(function (models) {
-
-                $scope.images = models;
-                $scope.dataHasLoaded = true;
-              
-            });
-
-
-        }
 
