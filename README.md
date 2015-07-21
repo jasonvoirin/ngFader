@@ -7,7 +7,7 @@ You can see original working demo [here.](http://www.thetexans.org)
 
 ## My Demo
 Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery by stepping through directory
-(http://www.primetime3.com/gallery)
+(http://primetime3.com/gallery)
 
 ## My Changes
   added properties to use
