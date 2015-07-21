@@ -1,10 +1,6 @@
 
-
-		
-(function () {
-    'use strict';
-    angular.module('ngFader', [])
-	.directive('ngFader', function($interval) {
+var ngFader = angular.module('directive.ngFader', [])
+	.directive('ngFader',['$interval', function($interval) {
 
 			return {
 
@@ -18,14 +14,14 @@
 				},
 				link: function(scope, elem, attrs) {
 
-					console.log('scope link ',scope.images)
-					scope.$watch('scope.images',function(){
-						console.log('scope link $watch ',scope.images)
-						//scope.images.forEach(function(image){
-						//	image.visible=false;
-						//});
-						//scope.images[scope.currentIndex].visible=true;
-					});
+					//console.log('scope link ',scope.images)
+					//scope.$watch('scope.images',function(){
+					//	console.log('scope link $watch ',scope.images)
+					//	//scope.images.forEach(function(image){
+					//	//	image.visible=false;
+					//	//});
+					//	//scope.images[scope.currentIndex].visible=true;
+					//});
 					scope.numberOfImages = scope.images.length;
 					if (scope.showdots) {
 						scope.dots = function(num) {
@@ -75,7 +71,7 @@
 
 				},
 				//'<li ng-repeat="image in images"><img style="height:auto; width:auto; max-width:auto; max-height:650px;margin-left: auto;margin-right: auto;" data-ng-src="{{image.src}}" data-ng-alt="{{image.alt}}" ng-show="selectedImage==$index"/></li>' +
-			    //style="max-width:auto; max-height:650px;"
+			    //style="max-width:auto; max-height:650px;  style="min-height:460px" "
 			template: '<div class="ng-fader">'+
 	    		//images will render here
 
@@ -106,9 +102,3 @@
 				'</ul>' + 
 			'</div>' +
 		'</div>'
-
-
-	  };
-	});
-
-}());
