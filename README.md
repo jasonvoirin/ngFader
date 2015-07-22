@@ -10,11 +10,11 @@ Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery
 (http://primetime3.com) see banner then select gallery menu for more usage
 
 ## My Changes
-  #added properties to use
-  #autostart
-  #timer
-  #data-images
-  #showdots
+# added properties to use
+# autostart
+# timer
+# data-images
+# showdots
   
   setup in controller
   $scope.dataHasLoaded = false; flag for data loading
