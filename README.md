@@ -9,8 +9,7 @@ You can see original working demo [here.](http://www.thetexans.org)
 Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery by stepping through directory
 (http://primetime3.com) see banner then select gallery menu for more usage
 
-## My Changes
-# added properties to use
+## My Changes (added properties to use)
 # autostart
 # timer
 # data-images
