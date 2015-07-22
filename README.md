@@ -16,6 +16,7 @@ Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery
 # showdots
   
   setup in controller
+```  
   $scope.dataHasLoaded = false; flag for data loading
   // dynamic data
   $scope.getGallery = function () {
@@ -51,9 +52,12 @@ Gallery for party fishing boat using nodejs,sailsjs with walker to build gallery
             $scope.getGallery($scope.dataset);
             $scope.dataHasLoaded = false;
    });
+   ```
+  
     setup in html
+ ```
     <ng-fader data-images="images" autostart=true timer="6000" ng-if="dataHasLoaded" showdots=false></ng-fader>
-
+```
 
 
 
