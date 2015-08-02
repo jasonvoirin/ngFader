@@ -19,8 +19,13 @@ https://angularjs.org/
 <pre><code>\<script src="js/directives/ngFader.js"></script></code></pre>
 3. Add 'ngFader' as a module dependancy - make sure ngAnimate and ngTouch is listed as a dependancy as well:
 <pre><code>angular.module('yourAppModule', ['ngAnimate', 'ngTouch', 'ngFader']);</code></pre>
-4. In the ngFader directive, list your image locations in the “scope.images” array: <br>
-<pre><code>scope.images = [{<br>
+4. In the ngFader directive, set your timer and list your image locations in the “scope.images” array: <br>
+<pre><code>
+//Set your interval time. 4000 = 4 seconds<br>
+scope.setTime = 4000;<br>
+<br>
+//List your images here. <br>
+scope.images = [{<br>
 		src: 'img/slideshow/slideshow_Image_1_low.jpg',<br>
 		alt: 'Add your image description here'<br>
 		}, {<br>
