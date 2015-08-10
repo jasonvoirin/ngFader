@@ -2,7 +2,7 @@
 A simple, responsive and pure AngularJS fading slideshow directive that requires no jQuery!
 
 ## Demo
-You can see a working demo at the ngFader [home page.](http://www.jasonvoirin.com/ngfader.html)
+You can see a working demo at the ngFader [home page.](http://www.jasonvoirin.com/ngfader)
 
 ## Dependencies
 ngFader requires ngAnimate for the fading transitions and ngTouch for mobile swiping gestures. 
