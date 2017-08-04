@@ -14,9 +14,9 @@ https://angularjs.org/
 
 ## Setup Instructions
 1. Link the ngFader CSS in your header:<br>
-<pre><code>\<link type="text/css" rel="stylesheet" href="css/ngFader.css"></code></pre>
+<pre><code>link type="text/css" rel="stylesheet" href="css/ngFader.css"</code></pre>
 2. Add the ngFader directive script tag in your header: <br>
-<pre><code>\<script src="js/directives/ngFader.js"></script></code></pre>
+<pre><code><script src="js/directives/ngFader.js"></script></code></pre>
 3. Add 'ngFader' as a module dependancy - make sure ngAnimate and ngTouch is listed as a dependancy as well:
 <pre><code>angular.module('yourAppModule', ['ngAnimate', 'ngTouch', 'ngFader']);</code></pre>
 4. In the ngFader directive, set your timer and list your image locations in the “scope.images” array: <br>
