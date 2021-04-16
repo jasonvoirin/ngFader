@@ -1,3 +1,6 @@
+# Support
+This repository is no longer being supported.
+
 # ngFader
 A simple, responsive and pure AngularJS fading slideshow directive that requires no jQuery!
 
